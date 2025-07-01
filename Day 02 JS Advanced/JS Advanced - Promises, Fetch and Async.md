@@ -1,5 +1,5 @@
 # Synchronous vs Asynchronous Programming
-![[Pasted image 20250630231049.png]]
+![Pasted image 20250630231049](https://github.com/user-attachments/assets/3cf492ef-0a64-4b98-845c-684609a3dd2a)
 > - Image is from Lane - boot.dev
 - **Synchronous** code runs *sequentially* 
 - **Asynchronous** code runs *concurrently*
