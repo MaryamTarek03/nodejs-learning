@@ -92,6 +92,25 @@ const play = (title) => {
 }
 ```
 
+# null vs undefined
+
+```jsx
+function func(p = 'default') {
+	// ...
+}
+func();            // default'
+func(undefined);   // default'
+func(null);        // null
+```
+
+# Auto-boxing
+
+```jsx
+// A special object is wrapped around the string, can also work with booleans & numbers
+'hello'.length;
+'hello'.toUpperCase();
+```
+
 # Objects
 
 ```jsx
@@ -118,92 +137,3 @@ console.log(game['name']);
 // helpful when the property name can't be written properly
 game['release-date']; // JavaScript would have otherwise interpreted the dash as a minus
 ```
-
-## Object is a reference
-
-```jsx
-// so basically object is a pointer to a place in memory
-// so even if we defined using 'const' we can still change value
-const game = {
-	name: 'Red Dead Redemption 2',
-	genre: 'Action'
-};
-
-// now we have two pointers referencing same object 
-// and any change on any of them will be reflected on both
-const sameGame = game;
-
-const game2 = {
-	name: 'Red Dead Redemption 2',
-	genre: 'Action'
-};
-
-game === game2 // false, different pointers
-```
-
-## Object shortcuts
-
-```jsx
-// this two are the same (destructuring)
-const name = game.name;
-const { name } = game;
-
-const { name, genre } = game;
-
-// shorthand
-const name = 'Portal 2';
-const game = {
-	// instead of name: name, we can shorthand it
-	name,
-	genre: 'Puzzle'
-};
-
-// shorthand method
-const game = {
-	name, 
-	genre,
-	/*
-	play: function play() {
-		console.log('Playing');
-	}
-	*/
-	play() { console.log('Playing'); }
-};
-```
-# JSON
-
-```jsx
-game = JSON.stringify(game); // convert JavaScript object into JSON
-JSON.parse(game); // JSON into object
-```
-
-# localStorage
-
-```jsx
-localStorage.setItem('name', 'value'); // only accept strings
-localStorage.getItem('name');
-localStorage.removeItem('name');
-
-game = JSON.stringify(game);
-localStorage.setItem('game', game); // JSON is a string
-```
-
-# null vs undefined
-
-```jsx
-function func(p = 'default') {
-	// ...
-}
-func();            // default'
-func(undefined);   // default'
-func(null);        // null
-```
-
-# Auto-boxing
-
-```jsx
-// A special object is wrapped around the string, can also work with booleans & numbers
-'hello'.length;
-'hello'.toUpperCase();
-```
-

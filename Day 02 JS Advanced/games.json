@@ -1,0 +1,24 @@
+{
+    "games": [
+        {
+        "title": "Hollow Knight",
+        "genre": "Metroidvania",
+        "platforms": ["PC", "Switch", "PS4", "Xbox One"]
+        },
+        {
+        "title": "Celeste",
+        "genre": "Platformer",
+        "platforms": ["PC", "Switch", "PS4", "Xbox One"]
+        },
+        {
+        "title": "Undertale",
+        "genre": "RPG",
+        "platforms": ["PC", "Switch", "PS4"]
+        },
+        {
+        "title": "Stardew Valley",
+        "genre": "Simulation",
+        "platforms": ["PC", "Switch", "PS4", "Xbox One"]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "day-02-js-advanced",
+  "version": "1.0.0",
+  "main": "modules.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
