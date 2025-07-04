@@ -2,8 +2,8 @@
 Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 Name: Remove Duplicates from Sorted Array
 Problem: 
-Given a sorted array nums, remove the duplicates in-place such that 
-each element appears only once and returns the new length.
+  Given a sorted array nums, remove the duplicates in-place such that 
+  each element appears only once and returns the new length.
 */
 
 /**
